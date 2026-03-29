@@ -1,6 +1,6 @@
-from embedding import model
-from vector_store import search_index
-from config import TOP_K
+from rag.embedding import model
+from rag.vector_store import search_index
+from rag.config import TOP_K
 
 def retrieve(query, index, chunks):
     query_embedding = model.encode([query])[0]

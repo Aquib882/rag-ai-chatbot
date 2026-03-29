@@ -1,9 +1,9 @@
-from chunking import chunk_text
-from embedding import get_embeddings
-from vector_store import create_index
-from retriever import retrieve
-from generator import generate_answer
-from config import CHUNK_SIZE, CHUNK_OVERLAP
+from rag.chunking import chunk_text
+from rag.embedding import get_embeddings
+from rag.vector_store import create_index
+from rag.retriever import retrieve
+from rag.generator import generate_answer
+from rag.config import CHUNK_SIZE, CHUNK_OVERLAP
 
 def init_pipeline(text):
     chunks = chunk_text(text, CHUNK_SIZE, CHUNK_OVERLAP)

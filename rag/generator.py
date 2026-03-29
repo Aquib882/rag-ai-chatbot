@@ -1,5 +1,5 @@
 from groq import Groq
-from config import API_KEY, MODEL_NAME
+from rag.config import API_KEY, MODEL_NAME
 
 # Initialize client
 client = Groq(api_key=API_KEY)

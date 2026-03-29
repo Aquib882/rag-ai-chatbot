@@ -1,6 +1,6 @@
 import streamlit as st
-from loader import load_text
-from pipeline import init_pipeline, run_query
+from rag.loader import load_text
+from rag.pipeline import init_pipeline
 
 st.title("📄 RAG Chatbot")
 
